@@ -254,5 +254,5 @@ This School Management System is provided as-is for educational and commercial u
 ---
 
 **Version**: 1.0  
-**Last Updated**: 2024  
+**Last Updated**: 2026  
 **Developer**: Admin Panel Team
