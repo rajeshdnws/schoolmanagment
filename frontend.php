@@ -21,6 +21,7 @@ $events_list = getAllRows("SELECT * FROM events WHERE status IN ('upcoming', 'on
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/frontend.css">
+    <link rel="stylesheet" href="assets/css/chatbot.css">
 </head>
 <body>
     <!-- ========== Navigation Bar ========== -->
@@ -475,10 +476,11 @@ $events_list = getAllRows("SELECT * FROM events WHERE status IN ('upcoming', 'on
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2024 School Management System. All rights reserved.</p>
+            <p>&copy; <?php echo date("Y");?> School Management System. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="assets/js/frontend.js"></script>
+    <script src="assets/js/chatbot.js"></script>
 </body>
 </html>

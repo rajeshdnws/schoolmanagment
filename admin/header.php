@@ -125,6 +125,19 @@
                     </div>
                 </li>
                 <?php endif; ?>
+
+                <!-- Chatbot Menu (Admin, NTS can manage) -->
+                <?php if (hasAccess('chatbot')): ?>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">🤖 Chatbot ▼</a>
+                    <div class="dropdown-menu">
+                        <a href="chatbot.php">FAQs</a>
+                        <?php if (hasAccess('chatbot', 'add')): ?>
+                            <a href="chatbot_add.php">Add FAQ</a>
+                        <?php endif; ?>
+                    </div>
+                </li>
+                <?php endif; ?>
                 
                 <!-- User Profile Dropdown -->
                 <li class="float-right dropdown">
